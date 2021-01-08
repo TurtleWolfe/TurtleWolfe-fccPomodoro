@@ -1,0 +1,92 @@
+.fa-plus-circle {
+  color: #000;
+}
+.fa-minus-square {
+  color: #000;
+}
+
+h5 {
+  padding-top: 10px;
+  color: #000;
+}
+
+#break-length,
+#timer-label,
+#session-length,
+#break-increment,
+#session-increment,
+#break-decrement,
+#session-decrement {
+  padding: 10px;
+}
+
+.pomodoro-pad {
+  margin: 5px;
+}
+
+.pomo-display {
+  padding-top: 15px;
+  color: #ffc107;
+}
+
+.slab {
+  font-family: 'Alfa Slab One', cursive;
+}
+
+#break-length h5,
+#timer-label h5,
+#session-length h5 {
+  font-family: 'Lobster', cursive;
+  color: #ffc107;
+}
+
+.btn-primary {
+  background: rgb(175, 216, 238);
+  background: linear-gradient(
+    0deg,
+    rgba(175, 216, 238, 1) 0%,
+    rgba(0, 123, 255, 1) 100%
+  );
+}
+
+.btn-success {
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(40, 167, 69, 1) 100%
+  );
+}
+
+.btn-info {
+  background: rgb(175, 238, 238);
+  background: linear-gradient(
+    0deg,
+    rgba(175, 238, 238, 1) 0%,
+    rgba(23, 162, 184, 1) 100%
+  );
+}
+
+.btn-warning {
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgb(157, 195, 34) 0%,
+    rgba(255, 193, 7, 1) 100%
+  );
+}
+
+.btn-dark {
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgb(0, 0, 0, 1) 0%,
+    rgb(77, 59, 8, 0.5) 100%
+  );
+}
+
+.pomo-display h1 {
+  padding-top: 15px;
+  color: #6197fb;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 1);
+}

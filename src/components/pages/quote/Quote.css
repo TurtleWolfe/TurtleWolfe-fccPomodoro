@@ -1,0 +1,31 @@
+.drum-pad {
+  margin: 5px;
+  padding-top: 15px;
+  font-family: 'Alfa Slab One', cursive;
+  /* font-family: 'Lobster', cursive; */
+  /* font-family: 'Special Elite', cursive; */
+}
+
+#text {
+  /* font-family: 'Alfa Slab One', cursive; */
+  /* font-family: 'Lobster', cursive; */
+  /* font-family: 'Special Elite', cursive; */
+  color: #ffc107;
+}
+
+.blockquote-footer {
+  /* font-family: 'Alfa Slab One', cursive; */
+  /* font-family: 'Lobster', cursive; */
+  font-family: 'Special Elite', cursive;
+}
+
+#new-quote {
+  font-family: 'Alfa Slab One', cursive;
+  /* font-family: 'Lobster', cursive; */
+  /* font-family: 'Special Elite', cursive; */
+  color: #ffc107;
+}
+
+.fa-twitter {
+  padding-top: 10px;
+}

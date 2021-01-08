@@ -1,0 +1,113 @@
+i {
+  color: #6197fb;
+}
+a {
+  text-decoration: none;
+  font-family: 'Special Elite', cursive;
+}
+
+body {
+  background-color: #282c34;
+}
+
+btn,
+button {
+  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.blockquote {
+  font-family: 'Lobster', cursive;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 50vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  /* min-height: 70vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+  margin: auto;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* scriptHammer logo */
+
+.App-hammer {
+  background-color: #282c34;
+  /* min-height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  max-width: 16em;
+  margin: auto;
+  /* margin-top: 3em; */
+  overflow: hidden;
+  background-image: url(./images/script-n-hammer.png);
+  /* background-size: 100% auto; */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.App-hammer img {
+  display: block;
+  width: 100%;
+  /* height: auto; */
+  animation: App-logo-spin infinite 20s linear;
+}
+
+.container {
+  margin-top: 5%;
+  padding-top: 56px;
+}
+
+@media screen and (min-width: 600px) {
+  /* Screens above 600px width */
+  .container {
+    margin-top: 12%;
+    padding-top: 0px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  /* Screens above 960px width */
+  .container {
+    margin-top: 12%;
+    padding-top: 0px;
+  }
+}

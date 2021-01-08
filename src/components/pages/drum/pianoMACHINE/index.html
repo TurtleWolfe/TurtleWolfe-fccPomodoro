@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>pianoMACHINE</title>
+  <meta name="description" content="remember when we all skinned our music players?">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <!--  Essential META Tags -->
+  <meta property="og:title" content="pianoMACHINE">
+  <meta property="og:description" content="Remember when we all skinned our own music players?">
+  <meta property="og:image" content="https://github.com/TurtleWolf/pianoMACHINE/blob/master/images/Capture3rdPreview.PNG?raw=true">
+  <meta property="og:url" content="https://turtlewolf.github.io/pianoMACHINE/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!--  Non-Essential, But Recommended -->
+  <meta property="og:site_name" content="TurtleWolfe.com">
+  <meta name="twitter:image:alt" content="TurtleWolfe.com">
+
+  <!--  Non-Essential, But Required for Analytics -->
+  <meta property="fb:app_id" content="your_app_id" />
+  <meta name="twitter:site" content="@website-TurtleWolfe">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body id="body">
+  <!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+  <div>
+    <audio data-sound-id="a" class="accent">
+      <source type="audio/wav" src="javaScript30daysDRUM/clap.wav" />
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio data-sound-id="s" class="accent">
+      <source type="audio/wav" src="javaScript30daysDRUM/hihat.wav" />
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio data-sound-id="d" class="accent">
+      <source type="audio/wav" src="javaScript30daysDRUM/kick.wav" />
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio data-sound-id="f" class="accent">
+      <source type="audio/wav" src="javaScript30daysDRUM/openhat.wav" />
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio data-sound-id="g" class="accent">
+      <source type="audio/wav" src="javaScript30daysDRUM/boom.wav" />
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio data-sound-id="h" class="accent">
+      <source type="audio/wav" src="javaScript30daysDRUM/ride.wav" />
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio data-sound-id="j" class="accent">
+      <source type="audio/wav" src="javaScript30daysDRUM/snare.wav" />
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio data-sound-id="k" class="accent">
+      <source type="audio/wav" src="javaScript30daysDRUM/tom.wav" />
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio data-sound-id="l" class="accent">
+      <source type="audio/wav" src="javaScript30daysDRUM/tink.wav" />
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio data-sound-id="A" class="accent">
+      <source type="audio/mp3" src="piano/a1.mp3" />
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio data-sound-id="S" class="accent">
+      <source type="audio/mp3" src="piano/a1s.mp3" />
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio data-sound-id="D" class="accent">
+      <source type="audio/mp3" src="piano/a1s.mp3" />
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio data-sound-id="F" class="accent">
+      <source type="audio/mp3" src="piano/b1.mp3" />
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio data-sound-id="G" class="accent">
+      <source type="audio/mp3" src="piano/c1.mp3" />
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio data-sound-id="H" class="accent">
+      <source type="audio/mp3" src="piano/c1s.mp3" />
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio data-sound-id="J" class="accent">
+      <source type="audio/mp3" src="piano/c2.mp3" />
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio data-sound-id="K" class="accent">
+      <source type="audio/mp3" src="piano/d1.mp3" />
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <audio data-sound-id="L" class="accent">
+      <source type="audio/mp3" src="piano/e1.mp3" />
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+  </div><!-- audio tags -->
+  <div class="keys">
+    <h2 id="task-title"><a href="https://turtlewolfe.com/" rel="link" class="yallow">TurtleWolfe.com</a></h2>
+    <div data-sound-id="a" class="key">
+      <kbd>a</kbd>
+      <span class="sound">clap</span>
+    </div>
+    <div data-sound-id="s" class="key">
+      <kbd>s</kbd>
+      <span class="sound">hihat</span>
+    </div>
+    <div data-sound-id="d" class="key">
+      <kbd>d</kbd>
+      <span class="sound">kick</span>
+    </div>
+    <div data-sound-id="f" class="key">
+      <kbd>f</kbd>
+      <span class="sound">openhat</span>
+    </div>
+    <div data-sound-id="g" class="key">
+      <kbd>g</kbd>
+      <span class="sound">boom</span>
+    </div>
+    <div data-sound-id="h" class="key">
+      <kbd>h</kbd>
+      <span class="sound">ride</span>
+    </div>
+    <div data-sound-id="j" class="key">
+      <kbd>j</kbd>
+      <span class="sound">snare</span>
+    </div>
+    <div data-sound-id="k" class="key">
+      <kbd>k</kbd>
+      <span class="sound">tom</span>
+    </div>
+    <div data-sound-id="l" class="key">
+      <kbd>l</kbd>
+      <span class="sound">tink</span>
+    </div>
+    <h4>"Remember when<br />we all skinned<br />our own music players?"</h4>
+  </div>
+  <div class="keyz">
+    <div data-sound-id="A" class="key">
+      <kbd>A</kbd>
+      <span class="sound">piano</span>
+    </div>
+    <div data-sound-id="S" class="key">
+      <kbd>S</kbd>
+      <span class="sound">piano</span>
+    </div>
+    <div data-sound-id="D" class="key">
+      <kbd>D</kbd>
+      <span class="sound">piano</span>
+    </div>
+    <div data-sound-id="F" class="key">
+      <kbd>F</kbd>
+      <span class="sound">piano</span>
+    </div>
+    <div data-sound-id="G" class="key">
+      <kbd>G</kbd>
+      <span class="sound">piano</span>
+    </div>
+    <div data-sound-id="H" class="key">
+      <kbd>H</kbd>
+      <span class="sound">piano</span>
+    </div>
+    <div data-sound-id="J" class="key">
+      <kbd>J</kbd>
+      <span class="sound">piano</span>
+    </div>
+    <div data-sound-id="K" class="key">
+      <kbd>K</kbd>
+      <span class="sound">piano</span>
+    </div>
+    <div data-sound-id="L" class="key">
+      <kbd>L</kbd>
+      <span class="sound">piano</span>
+    </div>
+
+  </div>
+  <div class="keyz-loop">
+    <div data-sound-id="1" class="key">
+      <kbd>1</kbd>
+      <span class="sound">backloop</span>
+    </div>
+    <div data-sound-id="2" class="key">
+      <kbd>2</kbd>
+      <span class="sound">backloop</span>
+    </div>
+    <div data-sound-id="3" class="key">
+      <kbd>3</kbd>
+      <span class="sound">backloop</span>
+    </div>
+    <div data-sound-id="4" class="key">
+      <kbd>4</kbd>
+      <span class="sound">backloop</span>
+    </div>
+    <div data-sound-id="5" class="key">
+      <kbd>5</kbd>
+      <span class="sound">backloop</span>
+    </div>
+    <div data-sound-id="6" class="key">
+      <kbd>6</kbd>
+      <span class="sound">backloop</span>
+    </div>
+    <div data-sound-id="7" class="key">
+      <kbd>7</kbd>
+      <span class="sound">backloop</span>
+    </div>
+    <div data-sound-id="8" class="key">
+      <kbd>8</kbd>
+      <span class="sound">backloop</span>
+    </div>
+    <div data-sound-id="9" class="key">
+      <kbd>9</kbd>
+      <span class="sound">backloop</span>
+    </div>
+
+  </div>
+  <div class="container">
+    <input id="accent-control" type="range" min="0" max="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume(this.value)">SetVolume</input>
+    <input id="backloop-control" type="range" min="0" max="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume(this.value)"></input>
+    <h5>
+      press <code>[a,s,d,f,g,h,j,k,l] to play one of nine DRUM sounds</code><br /><br />
+      press <code>[A,S,D,F,G,H,J,K,L] to play one of nine PIANO sounds</code><br /><br />
+      press <code>[1,2,3,4,5,6,7,8,9] to play one of nine BACKING LOOPS</code><br /><br /><br />
+
+      <a href="https://freesound.org/people/TurtleWolfe/bookmarks/category/90037/" rel="link">freeSOUND.org</a><br />
+      check out my bookmarks & then go link your own collections<br />
+      by editing the url source of the audio tags.<br /><br />
+      <code>
+          &lt;audio data-sound-id="1"&gt;<br/>
+          &lt;source type="audio/wav" src="https://github...wav?raw=true" /&gt;<br/>
+          &lt;/audio&gt;<br/>
+      </code><br />
+      <a href="https://www.twitch.tv/videos/315409005" rel="link">window.addEventListener("keypress",
+        playSound);</a><br />
+      global volume slider<br />
+      drop down selector for looping backbeat<br /><br />
+
+      project inspired after first 33 videos which cover the fundamentals<br />
+      <a href="https://www.udemy.com/share/10015YBEcTdV1aQQ==/" rel="link">Modern JavaScript From the Beginning</a><br />&
+      the first of 30 tutorials<br />
+      <a href="https://javascript30.com/" rel="link">https://javascript30.com/</a><br />
+    </h5>
+
+    <footer>
+      <a href="https://github.com/TurtleWolf/pianoMACHINE" rel="link" class="yallow">source code on
+        github.io</a><br />
+      <a href="https://turtlewolfe.com/" rel="link" class="yallow">Copyright 2018, TurtleWolfe.com</a>
+    </footer>
+  </div><!-- backloops on the right collumn -->
+  <audio data-sound-id="1" class="loop" loop>
+    <source type="audio/wav" src="https://github.com/TurtleWolf/pianoMACHINE/blob/master/freeSound/4156__noisecollector__femalemanglecrazyrev2.wav?raw=true" />
+    Your browser does not support the <code>audio</code> element.
+  </audio>
+  <audio data-sound-id="2" class="loop" loop>
+    <source type="audio/wav" src="https://github.com/TurtleWolf/pianoMACHINE/blob/master/freeSound/404326__zagi2__subconscious.wav?raw=true" />
+    Your browser does not support the <code>audio</code> element.
+  </audio>
+  <audio data-sound-id="3" class="loop" loop>
+    <source type="audio/wav" src="https://github.com/TurtleWolf/pianoMACHINE/blob/master/freeSound/404840__andre-onate__dark-hop-beet-f2.wav?raw=true" />
+    Your browser does not support the <code>audio</code> element.
+  </audio>
+  <audio data-sound-id="4" class="loop" loop>
+    <source type="audio/wav" src="https://github.com/TurtleWolf/pianoMACHINE/blob/master/freeSound/409940__gis-sweden__webandbotmadeloop.wav?raw=true" />
+    Your browser does not support the <code>audio</code> element.
+  </audio>
+  <audio data-sound-id="5" class="loop" loop>
+    <source type="audio/wav" src="https://github.com/TurtleWolf/pianoMACHINE/blob/master/freeSound/424286__goredon__ambient-loops-iv-loopa.wav?raw=true" />
+    Your browser does not support the <code>audio</code> element.
+  </audio>
+  <audio data-sound-id="6" class="loop" loop>
+    <source type="audio/wav" src="https://github.com/TurtleWolf/pianoMACHINE/blob/master/freeSound/425563__zagi2__odd-pulsator.wav?raw=true" />
+    Your browser does not support the <code>audio</code> element.
+  </audio>
+  <audio data-sound-id="7" class="loop" loop>
+    <source type="audio/wav" src="https://github.com/TurtleWolf/pianoMACHINE/blob/master/freeSound/435147__kickhat__ambient-drone-21-07-2018.wav?raw=true" />
+    Your browser does not support the <code>audio</code> element.
+  </audio>
+  <audio data-sound-id="8" class="loop" loop>
+    <source type="audio/wav" src="https://github.com/TurtleWolf/pianoMACHINE/blob/master/freeSound/440957__l-q__coin-3.wav?raw=true" />
+    Your browser does not support the <code>audio</code> element.
+  </audio>
+  <audio data-sound-id="9" class="loop" loop>
+    <source type="audio/wav" src="https://github.com/TurtleWolf/pianoMACHINE/blob/master/freeSound/441375__malinby__organ.wav?raw=true" />
+    Your browser does not support the <code>audio</code> element.
+  </audio>
+  <script src="app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125846162-4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-125846162-4');
+  </script>
+</body>
+
+</html>

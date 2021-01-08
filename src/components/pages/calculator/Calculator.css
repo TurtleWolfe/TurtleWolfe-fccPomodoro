@@ -1,0 +1,65 @@
+.key-pad {
+  margin: 5px;
+  padding-top: 5px;
+}
+
+h2 {
+  margin: 5px;
+  padding-top: 5px;
+  /* color: #000; */
+}
+
+.decim {
+  color: #ffc107;
+}
+
+#clear {
+  margin: 15px;
+  padding: 15px;
+  /* padding-left: 15px; */
+}
+
+#display {
+  margin: 15px;
+  padding-top: 25px;
+  padding-left: 5px;
+  font-family: 'Alfa Slab One', cursive;
+  /* font-family: 'Lobster', cursive; */
+  /* font-family: 'Special Elite', cursive; */
+}
+
+.fa-divide {
+  color: #000;
+}
+.fa-times {
+  color: #000;
+}
+
+.fa-plus {
+  color: #000;
+}
+
+.fa-minus {
+  color: #000;
+}
+
+.fa-equals {
+  color: #000;
+}
+
+#one,
+#two,
+#three,
+#four,
+#five,
+#six,
+#seven,
+#eight,
+#zero,
+#clear,
+#nine {
+  color: #000;
+  font-family: 'Alfa Slab One', cursive;
+  /* font-family: 'Lobster', cursive; */
+  /* font-family: 'Special Elite', cursive; */
+}

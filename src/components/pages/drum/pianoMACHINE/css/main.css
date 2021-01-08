@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+html,
+.card-action {
+  color: yellow;
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+  /* height: 100%;
+  position: relative;
+  background: url(https://github.com/TurtleWolf/pianoMACHINE/blob/master/images/ChattanoogaBridge.jpg?raw=true)
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
+}
+.collection .collection-item {
+  background-color: rgba(117, 121, 39, 0.1); /* 50% transparent */
+}
+
+a {
+  color: lightblue;
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+}
+.yallow {
+  color: yellow;
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+}
+.container {
+  margin-top: 7%;
+}
+#navbar {
+  left: 0px;
+  width: 49%;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  border: 1mm ridge rgb(333, 333, 333, 0.6);
+} /* navbar */
+header {
+  font-size: 2.5em;
+  text-align: right;
+  float: right;
+}
+
+p {
+  color: yellow;
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+  height: 100%;
+  position: relative;
+  background: url(https://github.com/TurtleWolf/pianoMACHINE/blob/master/ChattanoogaBridge.jpg?raw=true)
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@media (max-width: 1250px) {
+  /* @media (width <= 30em) {....}  */
+} /* end of media query 1250px */
+footer {
+  z-index: 2;
+  position: fixed;
+  bottom: 0;
+  background-color: black;
+  border-radius: 13%;
+}
+html {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4c4c4c+0,595959+12,666666+25,474747+39,2c2c2c+50,000000+51,111111+60,2b2b2b+76,1c1c1c+91,131313+100;Black+Gloss+%231 */
+  background: rgb(76, 76, 76); /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    rgba(76, 76, 76, 1) 0%,
+    rgba(89, 89, 89, 1) 12%,
+    rgba(102, 102, 102, 1) 25%,
+    rgba(71, 71, 71, 1) 39%,
+    rgba(44, 44, 44, 1) 50%,
+    rgba(0, 0, 0, 1) 51%,
+    rgba(17, 17, 17, 1) 60%,
+    rgba(43, 43, 43, 1) 76%,
+    rgba(28, 28, 28, 1) 91%,
+    rgba(19, 19, 19, 1) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(76, 76, 76, 1) 0%,
+    rgba(89, 89, 89, 1) 12%,
+    rgba(102, 102, 102, 1) 25%,
+    rgba(71, 71, 71, 1) 39%,
+    rgba(44, 44, 44, 1) 50%,
+    rgba(0, 0, 0, 1) 51%,
+    rgba(17, 17, 17, 1) 60%,
+    rgba(43, 43, 43, 1) 76%,
+    rgba(28, 28, 28, 1) 91%,
+    rgba(19, 19, 19, 1) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    rgba(76, 76, 76, 1) 0%,
+    rgba(89, 89, 89, 1) 12%,
+    rgba(102, 102, 102, 1) 25%,
+    rgba(71, 71, 71, 1) 39%,
+    rgba(44, 44, 44, 1) 50%,
+    rgba(0, 0, 0, 1) 51%,
+    rgba(17, 17, 17, 1) 60%,
+    rgba(43, 43, 43, 1) 76%,
+    rgba(28, 28, 28, 1) 91%,
+    rgba(19, 19, 19, 1) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 ); /* IE6-9 */
+  font-size: 10px;
+  /* background: url(https://github.com/TurtleWolf/Responsive-Web-Design_-_Technical-Document/blob/master/800px-Joy_Oil_gas_station_blueprints.jpg?raw=true)
+    bottom center; */
+  background-size: cover;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.keyz-loop {
+  float: right;
+  top: 0;
+  clear: right;
+}
+.keyz {
+  top: 0;
+  position: fixed;
+  z-index: 1;
+}
+.keys {
+  top: 0;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 1;
+}
+
+.key {
+  border: 0.4rem solid black;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem 0.5rem;
+  transition: all 0.07s ease;
+  width: 10rem;
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  text-shadow: 0 0 0.5rem black;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
+
+kbd {
+  display: block;
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #ffc600;
+}
+#accent-control,
+#backloop-control {
+  /*
+  position: fixed;
+  z-index: 1;
+  */
+}
+#task-title {
+  justify-content: right;
+  margin-left: 7%;
+}
+.float-right {
+  float: right;
+  margin: 7%;
+}
